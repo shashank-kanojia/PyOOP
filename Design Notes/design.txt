@@ -1,0 +1,10 @@
+Title: Flatmates Electricity Bill Sharing
+
+Description:
+This app lets the flatmates split the electricity bill for a given month among themselves based on the number of days each flatmate stayed in the house.
+This app also generates a PDF output with the names of the flatmates, their period of stay, and the amount to be paid by each flatmate.
+
+Objects:
+Bill: amount and period attributes
+Flatmate: name, days_in_house attributes | pays(days_in_house, Bill.amount) method
+PDFReport: filename attribute | generate(flatmates, Bill, Flatmate.pays())
